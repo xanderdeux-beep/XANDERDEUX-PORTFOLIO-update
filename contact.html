@@ -14,19 +14,22 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="navbar__content">
-                <a href="./" class="navbar__logo">XanderDeux</a>
-                <div class="navbar__links">
-                    <a href="./" class="navbar__link">Home</a>
-                    <a href="/story.html" class="navbar__link">My Story</a>
-                    <a href="/works.html" class="navbar__link">Works</a>
-                    <a href="/services.html" class="navbar__link">Services</a>
-                    <a href="/contact.html" class="navbar__link navbar__link--active">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+  <div class="container">
+    <div class="navbar_content">
+      <a href="./" class="navbar_logo">XanderDeux</a>
+      <div class="navbar_links">
+        <a href="./" class="navbar_link">Home</a>
+        <a href="./story.html" class="navbar_link">My Story</a>
+        <a href="./works.html" class="navbar_link">Works</a>
+        <a href="./services.html" class="navbar_link">Services</a>
+        <a href="./contact.html" class="navbar_link">Contact</a>
+      </div>
+      <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <span class="icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -400,5 +403,36 @@
             }
         });
     </script>
+
+<script>
+  // Dark Mode Toggle Functionality
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const htmlElement = document.documentElement;
+  
+  // Check for saved theme preference or default to light mode
+  const currentTheme = sessionStorage.getItem('theme') || 'light';
+  
+  // Apply saved theme on page load
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    darkModeToggle.innerHTML = '<span class="icon">☀️</span>';
+  }
+  
+  // Toggle dark mode when button is clicked
+  darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    
+    // Update icon
+    darkModeToggle.innerHTML = isDarkMode 
+      ? '<span class="icon">☀️</span>' 
+      : '<span class="icon">🌙</span>';
+    
+    // Save preference to session storage
+    sessionStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+  });
+</script>
+
 </body>
 </html>
