@@ -891,6 +891,13 @@ body.dark-mode h6 {
   color: #ffffff !important;
 }
 
+/* Extra specific for main heading */
+body.dark-mode .hero h1,
+body.dark-mode main > h1,
+body.dark-mode section > h1 {
+  color: #ffffff !important;
+}
+
 /* Navbar Dark Mode */
 body.dark-mode .navbar {
   background-color: #2a2a2a;
@@ -971,4 +978,13 @@ body.dark-mode footer {
 
 body.dark-mode #darkModeToggle .icon {
   filter: brightness(1.5);
+}
+
+/* Catch-all for dark mode text visibility */
+body.dark-mode {
+  color: #e0e0e0;
+}
+
+body.dark-mode:not(input):not(textarea):not(button) {
+  color: #e0e0e0;
 }
