@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services - UI/UX Design, Web Development, Brand Identity, and more">
+    <title>Services - XanderDeux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__content">
+                <a href="/" class="navbar__logo">XanderDeux</a>
+                <div class="navbar__links">
+                    <a href="/" class="navbar__link">Home</a>
+                    <a href="/story.html" class="navbar__link">My Story</a>
+                    <a href="/works.html" class="navbar__link">Works</a>
+                    <a href="/services.html" class="navbar__link navbar__link--active">Services</a>
+                    <a href="/contact.html" class="navbar__link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="h1">Services</h1>
+                <p class="body">What I can help you with</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="h2">Services I Offer</h2>
+            <div class="services-grid">
+                <article class="card card--service">
+                    <h3 class="card__title">UI/UX Design</h3>
+                    <p class="card__description">Create intuitive, accessible interfaces that users love. I design with mobile-first thinking and user research at the foundation.</p>
+                    <ul class="service-list">
+                        <li class="service-list__item">Wireframing & prototyping</li>
+                        <li class="service-list__item">User research & personas</li>
+                        <li class="service-list__item">Accessibility audits (WCAG AAA)</li>
+                        <li class="service-list__item">Design systems</li>
+                    </ul>
+                </article>
+
+                <article class="card card--service">
+                    <h3 class="card__title">Web Development</h3>
+                    <p class="card__description">Build responsive, performant websites with semantic HTML, modern CSS, and JavaScript. All work is mobile-optimized and accessible.</p>
+                    <ul class="service-list">
+                        <li class="service-list__item">Responsive web development</li>
+                        <li class="service-list__item">Frontend implementation</li>
+                        <li class="service-list__item">CSS architecture & design tokens</li>
+                        <li class="service-list__item">Performance optimization</li>
+                    </ul>
+                </article>
+
+                <article class="card card--service">
+                    <h3 class="card__title">Brand Identity</h3>
+                    <p class="card__description">Establish a strong brand presence through comprehensive identity systems. From logo design to colour palettes and typography guidelines.</p>
+                    <ul class="service-list">
+                        <li class="service-list__item">Logo design & concepts</li>
+                        <li class="service-list__item">Colour systems with accessibility</li>
+                        <li class="service-list__item">Brand guidelines & systems</li>
+                        <li class="service-list__item">Visual identity development</li>
+                    </ul>
+                </article>
+
+                <article class="card card--service">
+                    <h3 class="card__title">Content Creation</h3>
+                    <p class="card__description">Produce visual content that tells your story. From graphics to photography, all work is designed for digital-first consumption.</p>
+                    <ul class="service-list">
+                        <li class="service-list__item">Visual design & graphics</li>
+                        <li class="service-list__item">Social media content</li>
+                        <li class="service-list__item">Photography & mockups</li>
+                        <li class="service-list__item">Motion graphics basics</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">XanderDeux</h3>
+                    <p class="footer__text">Creative Technologist & Design Student</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">Home</a></li>
+                        <li><a href="/story.html" class="footer__link">My Story</a></li>
+                        <li><a href="/works.html" class="footer__link">Works</a></li>
+                        <li><a href="/contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Social</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://linkedin.com/in/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://twitter.com/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="mailto:xanderdeux@gmail.com" class="footer__link">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 XanderDeux. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+        }
+
+        @media (max-width: 1199px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+
+        .service-list__item {
+            font-size: var(--font-body-size);
+            color: var(--color-neutral-800);
+            padding-left: var(--spacing-md);
+            position: relative;
+        }
+
+        .service-list__item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-success);
+            font-weight: 700;
+        }
+    </style>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

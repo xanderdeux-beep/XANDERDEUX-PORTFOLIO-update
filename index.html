@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="XanderDeux - Creative Technologist & Design Student. UI/UX Design, Web Development, Brand Identity.">
+    <title>XanderDeux - Creative Technologist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__content">
+                <a href="/" class="navbar__logo">XanderDeux</a>
+                <div class="navbar__links">
+                    <a href="/" class="navbar__link navbar__link--active">Home</a>
+                    <a href="/story.html" class="navbar__link">My Story</a>
+                    <a href="/works.html" class="navbar__link">Works</a>
+                    <a href="/services.html" class="navbar__link">Services</a>
+                    <a href="/contact.html" class="navbar__link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="h1">XanderDeux</h1>
+                <h2 class="h2">Creative Technologist & Design Student</h2>
+                <p class="body">Bridging artistic vision with technical execution. Designing digital experiences that inspire.</p>
+                <div class="hero__ctas">
+                    <a href="/works.html" class="btn btn--primary">View My Work</a>
+                    <a href="/contact.html" class="btn btn--secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="section featured-work">
+        <div class="container">
+            <h2 class="h2">Featured Work</h2>
+            <div class="projects-grid">
+                <article class="card card--project">
+                    <div class="card__image card__image--placeholder" role="img" aria-label="Project showcase image"></div>
+                    <h3 class="card__title">Project 1</h3>
+                    <p class="card__description">Responsive design system for portfolio</p>
+                </article>
+                <article class="card card--project">
+                    <div class="card__image card__image--placeholder" role="img" aria-label="Project showcase image"></div>
+                    <h3 class="card__title">Project 2</h3>
+                    <p class="card__description">Mobile-first UI design and development</p>
+                </article>
+                <article class="card card--project">
+                    <div class="card__image card__image--placeholder" role="img" aria-label="Project showcase image"></div>
+                    <h3 class="card__title">Project 3</h3>
+                    <p class="card__description">Accessibility-focused web application</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="h2 cta-box__title">Ready to work together?</h2>
+                <p class="body cta-box__text">Let's create something amazing.</p>
+                <a href="/contact.html" class="btn btn--primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">XanderDeux</h3>
+                    <p class="footer__text">Creative Technologist & Design Student</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/works.html" class="footer__link">Works</a></li>
+                        <li><a href="/story.html" class="footer__link">My Story</a></li>
+                        <li><a href="/services.html" class="footer__link">Services</a></li>
+                        <li><a href="/contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Social</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://linkedin.com/in/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://twitter.com/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="mailto:xanderdeux@gmail.com" class="footer__link">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 XanderDeux. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

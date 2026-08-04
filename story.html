@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Story - From recovery to creative ambition">
+    <title>My Story - XanderDeux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__content">
+                <a href="/" class="navbar__logo">XanderDeux</a>
+                <div class="navbar__links">
+                    <a href="/" class="navbar__link">Home</a>
+                    <a href="/story.html" class="navbar__link navbar__link--active">My Story</a>
+                    <a href="/works.html" class="navbar__link">Works</a>
+                    <a href="/services.html" class="navbar__link">Services</a>
+                    <a href="/contact.html" class="navbar__link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="h1">My Journey</h1>
+                <p class="body">From recovery to creative ambition</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section">
+        <div class="container">
+            <div class="timeline">
+                <!-- Event 1: 2020 -->
+                <article class="card timeline__event">
+                    <h3 class="caption timeline__year">2020</h3>
+                    <h2 class="h3">The Turning Point</h2>
+                    <p class="body">Overcame personal challenges and rediscovered my passion for creative work. This period of recovery became the foundation for my ambition to build a meaningful career in design and technology.</p>
+                </article>
+
+                <!-- Event 2: 2023 -->
+                <article class="card timeline__event">
+                    <h3 class="caption timeline__year">2023</h3>
+                    <h2 class="h3">BCIT Enrollment</h2>
+                    <p class="body">Started the New Media Design & Web Development program at British Columbia Institute of Technology. This decision marked my commitment to bridging artistic vision with technical execution, combining design thinking with development skills.</p>
+                </article>
+
+                <!-- Event 3: 2024 -->
+                <article class="card timeline__event">
+                    <h3 class="caption timeline__year">2024</h3>
+                    <h2 class="h3">Freelance Launch</h2>
+                    <p class="body">Began taking on design and development projects from local clients and online. Started building a portfolio of real-world work while deepening expertise in user-centered design and responsive web development.</p>
+                </article>
+
+                <!-- Event 4: 2025-2026 -->
+                <article class="card timeline__event">
+                    <h3 class="caption timeline__year">2025–Now</h3>
+                    <h2 class="h3">Current Focus</h2>
+                    <p class="body">Building this portfolio and strengthening my BCI (Bachelor of Creative Industries) application. Creating design systems and full-stack projects that demonstrate both design thinking and technical execution. Preparing for the next chapter as a creative professional.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">XanderDeux</h3>
+                    <p class="footer__text">Creative Technologist & Design Student</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">Home</a></li>
+                        <li><a href="/works.html" class="footer__link">Works</a></li>
+                        <li><a href="/services.html" class="footer__link">Services</a></li>
+                        <li><a href="/contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Social</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://linkedin.com/in/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://twitter.com/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="mailto:xanderdeux@gmail.com" class="footer__link">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 XanderDeux. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+
+        .timeline__event {
+            position: relative;
+            padding-left: var(--spacing-xxl);
+        }
+
+        .timeline__event::before {
+            content: '';
+            position: absolute;
+            left: var(--spacing-lg);
+            top: var(--spacing-md);
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--color-primary);
+            border: 3px solid #ffffff;
+            box-shadow: 0 0 0 3px var(--color-primary);
+        }
+
+        .timeline__event::after {
+            content: '';
+            position: absolute;
+            left: calc(var(--spacing-lg) + 6px);
+            top: calc(var(--spacing-md) + 12px);
+            width: 2px;
+            height: calc(100% + var(--spacing-lg));
+            background-color: var(--color-neutral-100);
+        }
+
+        .timeline__event:last-child::after {
+            display: none;
+        }
+
+        .timeline__year {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+        }
+    </style>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

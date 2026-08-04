@@ -1,0 +1,32 @@
+# Development & Documentation
+PHASE*.md
+IMPROVEMENT*.md
+PHASES_*.md
+BUILD_SUMMARY.txt
+*_COMPLETE*.md
+*_PLAN.md
+
+# Node modules (if added later)
+node_modules/
+package-lock.json
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build outputs
+dist/
+build/
+
+# Environment
+.env
+.env.local

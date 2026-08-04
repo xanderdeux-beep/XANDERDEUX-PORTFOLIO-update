@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - Get in touch with XanderDeux">
+    <title>Contact - XanderDeux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__content">
+                <a href="/" class="navbar__logo">XanderDeux</a>
+                <div class="navbar__links">
+                    <a href="/" class="navbar__link">Home</a>
+                    <a href="/story.html" class="navbar__link">My Story</a>
+                    <a href="/works.html" class="navbar__link">Works</a>
+                    <a href="/services.html" class="navbar__link">Services</a>
+                    <a href="/contact.html" class="navbar__link navbar__link--active">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="h1">Get In Touch</h1>
+                <p class="body">Let's discuss your project or just say hello</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 class="h2">Send a Message</h2>
+                    <form class="form" id="contactForm" method="POST" action="https://formspree.io/f/xyzgqbdx">
+                        <div id="form-status" class="form__status" role="status" aria-live="polite" aria-atomic="true"></div>
+
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required aria-invalid="false" aria-describedby="name-error">
+                            <span id="name-error" class="form__error" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-invalid="false" aria-describedby="email-error">
+                            <span id="email-error" class="form__error" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required aria-invalid="false" aria-describedby="subject-error">
+                            <span id="subject-error" class="form__error" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required aria-invalid="false" aria-describedby="message-error"></textarea>
+                            <span id="message-error" class="form__error" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary" id="submitBtn">
+                            <span class="btn__text">Send Message</span>
+                            <span class="btn__spinner" aria-hidden="true"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <aside class="contact-info">
+                    <h2 class="h2">Other Ways to Connect</h2>
+
+                    <div class="contact-method">
+                        <h3 class="h4">Email</h3>
+                        <p class="body"><a href="mailto:xanderdeux@gmail.com">xanderdeux@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3 class="h4">Social Media</h3>
+                        <ul class="social-links">
+                            <li><a href="https://linkedin.com/in/xanderdeux" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a></li>
+                            <li><a href="https://github.com/xanderdeux" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a></li>
+                            <li><a href="https://twitter.com/xanderdeux" target="_blank" rel="noopener noreferrer" class="social-link">Twitter</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3 class="h4">Documents</h3>
+                        <p class="body"><a href="#" download>Download Resume (PDF)</a></p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3 class="h4">Availability</h3>
+                        <p class="body">I'm available for freelance projects and consultations. Response time is typically within 48 hours.</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">XanderDeux</h3>
+                    <p class="footer__text">Creative Technologist & Design Student</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">Home</a></li>
+                        <li><a href="/story.html" class="footer__link">My Story</a></li>
+                        <li><a href="/works.html" class="footer__link">Works</a></li>
+                        <li><a href="/services.html" class="footer__link">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Social</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://linkedin.com/in/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://twitter.com/xanderdeux" class="footer__link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="mailto:xanderdeux@gmail.com" class="footer__link">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 XanderDeux. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--spacing-xxl);
+            margin-top: var(--spacing-xl);
+        }
+
+        @media (max-width: 1199px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xl);
+            }
+        }
+
+        .contact-form {
+            background-color: var(--color-neutral-50);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+        }
+
+        .contact-form .h2 {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+
+        .contact-info .h2 {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .contact-method {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+
+        .contact-method .h4 {
+            color: var(--color-primary);
+        }
+
+        .social-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+
+        .social-link {
+            color: var(--color-primary);
+            font-weight: var(--font-body-medium-weight);
+            transition: color 0.2s ease-in-out;
+        }
+
+        .social-link:hover {
+            color: var(--color-secondary);
+        }
+    </style>
+
+    <script>
+        // Validation rules
+        const VALIDATION_RULES = {
+            name: {
+                required: true,
+                minLength: 2,
+                pattern: /^[a-zA-Z\s'-]+$/,
+                messages: {
+                    required: 'Name is required',
+                    minLength: 'Name must be at least 2 characters',
+                    pattern: 'Name can only contain letters, spaces, hyphens, and apostrophes'
+                }
+            },
+            email: {
+                required: true,
+                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                messages: {
+                    required: 'Email is required',
+                    pattern: 'Please enter a valid email address'
+                }
+            },
+            subject: {
+                required: true,
+                minLength: 3,
+                messages: {
+                    required: 'Subject is required',
+                    minLength: 'Subject must be at least 3 characters'
+                }
+            },
+            message: {
+                required: true,
+                minLength: 10,
+                messages: {
+                    required: 'Message is required',
+                    minLength: 'Message must be at least 10 characters'
+                }
+            }
+        };
+
+        function validateField(fieldName, value) {
+            const rules = VALIDATION_RULES[fieldName];
+
+            if (rules.required && !value.trim()) {
+                return rules.messages.required;
+            }
+
+            if (rules.minLength && value.trim().length < rules.minLength) {
+                return rules.messages.minLength;
+            }
+
+            if (rules.pattern && !rules.pattern.test(value)) {
+                return rules.messages.pattern;
+            }
+
+            return null;
+        }
+
+        function validateForm(formData) {
+            const errors = {};
+
+            Object.keys(VALIDATION_RULES).forEach(field => {
+                const error = validateField(field, formData[field]);
+                if (error) {
+                    errors[field] = error;
+                }
+            });
+
+            return errors;
+        }
+
+        function displayFieldError(fieldName, errorMessage) {
+            const input = document.getElementById(fieldName);
+            const formGroup = input.closest('.form-group');
+            const errorSpan = formGroup.querySelector(`#${fieldName}-error`);
+
+            formGroup.setAttribute('data-error', 'true');
+            input.setAttribute('aria-invalid', 'true');
+            errorSpan.textContent = errorMessage;
+        }
+
+        function clearFieldError(fieldName) {
+            const input = document.getElementById(fieldName);
+            const formGroup = input.closest('.form-group');
+            const errorSpan = formGroup.querySelector(`#${fieldName}-error`);
+
+            formGroup.removeAttribute('data-error');
+            input.setAttribute('aria-invalid', 'false');
+            errorSpan.textContent = '';
+        }
+
+        // Form elements
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formStatus = document.getElementById('form-status');
+
+        // Form submission handler
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Validate all fields
+            const errors = validateForm(formData);
+
+            // Clear previous errors
+            Object.keys(VALIDATION_RULES).forEach(field => clearFieldError(field));
+
+            // Display new errors
+            if (Object.keys(errors).length > 0) {
+                Object.entries(errors).forEach(([field, error]) => {
+                    displayFieldError(field, error);
+                });
+
+                formStatus.textContent = 'Please fix the errors above.';
+                formStatus.className = 'form__status form__status--error';
+                return;
+            }
+
+            // Show loading state
+            formStatus.textContent = 'Sending your message...';
+            formStatus.className = 'form__status form__status--loading';
+            submitBtn.classList.add('btn--loading');
+            submitBtn.disabled = true;
+
+            try {
+                // Submit to Formspree
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success
+                    formStatus.textContent = '✓ Thank you! Your message has been sent successfully. I\'ll get back to you within 48 hours.';
+                    formStatus.className = 'form__status form__status--success';
+                    contactForm.reset();
+
+                    // Auto-hide success message after 5 seconds
+                    setTimeout(() => {
+                        formStatus.style.display = 'none';
+                    }, 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                formStatus.textContent = 'Error sending message. Please try again or email me directly at xanderdeux@gmail.com';
+                formStatus.className = 'form__status form__status--error';
+            } finally {
+                submitBtn.classList.remove('btn--loading');
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Real-time validation on blur
+        document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+            input.addEventListener('blur', (e) => {
+                const fieldName = e.target.id;
+                const value = e.target.value;
+                const error = validateField(fieldName, value);
+
+                if (error) {
+                    displayFieldError(fieldName, error);
+                } else {
+                    clearFieldError(fieldName);
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
