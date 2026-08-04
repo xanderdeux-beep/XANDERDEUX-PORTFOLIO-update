@@ -871,55 +871,104 @@ a:hover {
   outline-offset: 2px;
 }
 
-/* Dark Mode Toggle Button */
-.dark-mode-toggle {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
-.dark-mode-toggle:hover {
-  background-color: var(--color-neutral-200);
-}
-
-/* Dark Mode Theme */
+/* Dark Mode Theme - Complete Override */
 body.dark-mode {
-  --color-bg: #1a1a1a;
-  --color-text: #ffffff;
-  --color-neutral-100: #2a2a2a;
-  --color-neutral-200: #3a3a3a;
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
+/* Force all text to be light in dark mode */
+body.dark-mode * {
+  color: #e0e0e0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #ffffff !important;
+}
+
+/* Navbar Dark Mode */
 body.dark-mode .navbar {
-  background-color: var(--color-neutral-100);
-  border-bottom: 1px solid var(--color-neutral-200);
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #3a3a3a;
 }
 
-body.dark-mode section,
-body.dark-mode footer {
-  background-color: var(--color-bg);
-  color: var(--color-text);
+body.dark-mode .navbar_logo,
+body.dark-mode .navbar_link {
+  color: #e0e0e0 !important;
 }
 
+body.dark-mode .navbar_link:hover {
+  color: #ffffff !important;
+}
+
+/* Main content */
+body.dark-mode main,
+body.dark-mode section {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* Forms */
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode select {
-  background-color: var(--color-neutral-100);
-  color: var(--color-text);
-  border-color: var(--color-neutral-200);
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #3a3a3a;
 }
 
+/* Buttons */
 body.dark-mode button {
-  background-color: var(--color-primary);
+  color: #ffffff;
 }
 
-body.dark-mode .dark-mode-toggle:hover {
-  background-color: var(--color-neutral-200);
+/* Cards and sections */
+body.dark-mode [class*="card"],
+body.dark-mode [class*="section"] {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark-mode [class*="card"] h3,
+body.dark-mode [class*="section"] h3 {
+  color: #ffffff;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #60a5fa;
+}
+
+body.dark-mode a:hover {
+  color: #93c5fd;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-top: 1px solid #3a3a3a;
+}
+
+/* Dark Mode Toggle - Minimal, Non-Interfering */
+#darkModeToggle {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+body.dark-mode #darkModeToggle .icon {
+  filter: brightness(1.5);
 }
