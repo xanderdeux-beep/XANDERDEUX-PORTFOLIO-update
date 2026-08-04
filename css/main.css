@@ -914,3 +914,24 @@ body.dark-mode select {
   color: var(--color-neutral-800) !important;
   border-color: var(--color-neutral-100);
 }
+
+/* Social Icons */
+.footer a i,
+[class*="social"] a i {
+  margin-right: 8px;
+  width: 18px;
+  text-align: center;
+}
+
+footer .social a,
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Dark mode icon color */
+body.dark-mode .footer i,
+body.dark-mode [class*="social"] i {
+  color: var(--color-neutral-800);
+}
